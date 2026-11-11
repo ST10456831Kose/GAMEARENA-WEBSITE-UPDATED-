@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Arena Games | Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+
+        <span class="logo-mark">▲</span>
+
+        <span>
+            ARENA
+            <small>GAMES</small>
+        </span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="packages.html">
+            Packages
+        </a>
+
+        <a href="games.html">
+            Games
+        </a>
+
+        <a href="calculator.html">
+            Calculator
+        </a>
+
+        <a class="active"
+           href="contact.html">
+
+            Contact
+
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+<main class="page">
+
+
+<section class="page-title">
+
+    <p class="eyebrow">
+        CONTACT / BOOKING
+    </p>
+
+    <h1>
+        Let's
+        <span>play.</span>
+    </h1>
+
+    <p>
+        Complete the form below and we'll
+        get back to you about your booking.
+    </p>
+
+</section>
+
+
+<section class="contact-grid">
+
+
+<div class="card contact-info">
+
+    <p class="eyebrow">
+        GET IN TOUCH
+    </p>
+
+    <h2>
+        Ready when you are.
+    </h2>
+
+    <p>
+        <strong>Phone:</strong>
+        068 806 3178
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        hello@arenagames.co.za
+    </p>
+
+    <p>
+        <strong>Location:</strong>
+        Arena Games
+    </p>
+
+    <p>
+        <strong>Hours:</strong>
+        Monday – Sunday,
+        09:00 – 21:00
+    </p>
+
+</div>
+
+
+<form
+    id="bookingForm"
+    class="form"
+    onsubmit="submitBooking(event)"
+>
+
+
+<label>
+
+    Name
+
+    <input
+        type="text"
+        id="name"
+        required
+    >
+
+</label>
+
+
+<label>
+
+    Email
+
+    <input
+        type="email"
+        id="email"
+        required
+    >
+
+</label>
+
+
+<label>
+
+    Phone
+
+    <input
+        type="tel"
+        id="phone"
+        required
+    >
+
+</label>
+
+
+<label>
+
+    Package
+
+    <select
+        id="bookingPackage"
+        required
+    >
+
+        <option value="">
+            Choose a package
+        </option>
+
+        <option>
+            Starter
+        </option>
+
+        <option>
+            Pro Gamer
+        </option>
+
+        <option>
+            Team Event
+        </option>
+
+    </select>
+
+</label>
+
+
+<label>
+
+    Booking date
+
+    <input
+        type="date"
+        id="date"
+        required
+    >
+
+</label>
+
+
+<label>
+
+    Message
+
+    <textarea
+        id="message"
+        rows="5"
+        placeholder="Tell us about your booking..."
+    ></textarea>
+
+</label>
+
+
+<button
+    class="btn primary"
+    type="submit">
+
+    Send Booking
+
+</button>
+
+
+<p
+    id="formMessage"
+    class="form-message">
+</p>
+
+
+</form>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Arena Games. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

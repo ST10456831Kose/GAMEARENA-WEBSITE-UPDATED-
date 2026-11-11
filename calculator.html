@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Arena Games | Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+    <a class="logo" href="index.html">
+
+        <span class="logo-mark">▲</span>
+
+        <span>
+            ARENA
+            <small>GAMES</small>
+        </span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a href="packages.html">
+            Packages
+        </a>
+
+        <a href="games.html">
+            Games
+        </a>
+
+        <a class="active"
+           href="calculator.html">
+
+            Calculator
+
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+<main class="page">
+
+
+<section class="page-title">
+
+    <p class="eyebrow">
+        CALCULATE PRICES
+    </p>
+
+    <h1>
+        Plan your
+        <span>session.</span>
+    </h1>
+
+    <p>
+        Use the calculator to estimate
+        the price of your gaming experience.
+    </p>
+
+</section>
+
+
+<section class="calculator-layout">
+
+
+<form class="form"
+      onsubmit="calculatePrice(event)">
+
+    <label>
+
+        Choose a package
+
+        <select id="calcPackage" required>
+
+            <option value="">
+                Select package
+            </option>
+
+            <option value="150">
+                Starter — R150/hour
+            </option>
+
+            <option value="125">
+                Pro Gamer — R125/hour
+            </option>
+
+            <option value="100">
+                Team Event — R100/hour per person
+            </option>
+
+        </select>
+
+    </label>
+
+
+    <label>
+
+        Number of people
+
+        <input
+            id="people"
+            type="number"
+            min="1"
+            value="1"
+            required
+        >
+
+    </label>
+
+
+    <label>
+
+        Number of hours
+
+        <input
+            id="hours"
+            type="number"
+            min="1"
+            value="1"
+            required
+        >
+
+    </label>
+
+
+    <button
+        class="btn primary"
+        type="submit">
+
+        Calculate Price
+
+    </button>
+
+</form>
+
+
+<div class="result-box">
+
+    <p class="eyebrow">
+        ESTIMATED TOTAL
+    </p>
+
+    <h2 id="total">
+        R0
+    </h2>
+
+    <p id="calculationText">
+        Choose your package to calculate
+        your estimated price.
+    </p>
+
+    <a class="btn secondary"
+       href="contact.html">
+
+        Continue to Booking
+
+    </a>
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Arena Games. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
